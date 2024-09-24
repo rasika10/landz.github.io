@@ -4,9 +4,6 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
 import { Grid, Button, TextField, IconButton, Typography, Breadcrumbs, ToggleButton, ToggleButtonGroup, Link, FormControl, OutlinedInput, InputAdornment, List, ListItem } from '@mui/material';
-import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
-import FilterListIcon from '@mui/icons-material/FilterList';
-import ViewHeadlineIcon from '@mui/icons-material/ViewHeadline';
 import wish from '../images/wishlist.svg'
 import share from '../images/share.svg'
 import landImg from '../images/land.png'
@@ -26,42 +23,8 @@ import mapIcon from '../images/mapicon.png';
 import profile from '../images/profile.png';
 import StarBorderRoundedIcon from '@mui/icons-material/StarBorderRounded';
 import FiberManualRecordRoundedIcon from '@mui/icons-material/FiberManualRecordRounded';
-import StarRateRoundedIcon from '@mui/icons-material/StarRateRounded';
-import KeyboardBackspaceRoundedIcon from '@mui/icons-material/KeyboardBackspaceRounded';
-import EastRoundedIcon from '@mui/icons-material/EastRounded';
-import Reviews from './Reviews';
-import FeedbackBtn from './FeedbackBtn';
-import Footer from './Footer';
 import BasicDetailsTab from './BasicDetailsTab';
 import DocumentsTab from './DocumentsTab';
-function CustomTabPanel(props) {
-    const { children, value, index, ...other } = props;
-
-    return (
-        <div
-            role="tabpanel"
-            hidden={value !== index}
-            id={`simple-tabpanel-${index}`}
-            aria-labelledby={`simple-tab-${index}`}
-            {...other}
-        >
-            {value === index && <Box sx={{ p: 3 }}>{children}</Box>}
-        </div>
-    );
-}
-
-CustomTabPanel.propTypes = {
-    children: PropTypes.node,
-    index: PropTypes.number.isRequired,
-    value: PropTypes.number.isRequired,
-};
-
-function a11yProps(index) {
-    return {
-        id: `simple-tab-${index}`,
-        'aria-controls': `simple-tabpanel-${index}`,
-    };
-}
 
 
 const ViewLand = () => {
@@ -73,11 +36,11 @@ const ViewLand = () => {
     const [activeTab, setActiveTab] = React.useState(0);
 
     const tabs = [
-        { label: 'Basic Details', content: <BasicDetailsTab/> },
-        { label: 'Documents', content: <DocumentsTab/> },
-        { label: 'Pricing & Other', content: "<TabContent3 />" },
-        { label: 'Property Transactions', content: "<TabContent3 />" },
-        { label: 'Market Rate', content: "<TabContent3 />" },
+        { label: 'Basic Details', content: <BasicDetailsTab /> },
+        { label: 'Documents', content: <DocumentsTab /> },
+        { label: 'Pricing & Other', content: "" },
+        { label: 'Property Transactions', content: "" },
+        { label: 'Market Rate', content: "" },
     ];
 
 
@@ -347,62 +310,29 @@ const ViewLand = () => {
                     <Typography variant='h5'>
                         More Details
                     </Typography>
-                    {/* <Box>
-                        <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
-                            <Tab label="Basic Details" {...a11yProps(0)} sx={{
-                                '&.Mui-selected': {
-                                    color: '#065E14',
-                                    borderBottom: "2px solid #065E14",
-                                    border: "none"
-                                },
-                            }} />
-                            <Tab label="Documents" {...a11yProps(1)} />
-                            <Tab label="Pricing & Other" {...a11yProps(2)} />
-                            <Tab label="Property Transactions" {...a11yProps(3)} />
-                            <Tab label="Market Rate" {...a11yProps(4)} />
-                        </Tabs>
-                    </Box>
-                    <CustomTabPanel value={value} index={0}>
-
-  
-                    </CustomTabPanel>
-                    <CustomTabPanel value={value} index={1}>
-                        Item Two
-                    </CustomTabPanel>
-                    <CustomTabPanel value={value} index={2}>
-                        ssedgsd
-                    </CustomTabPanel>
-                    <CustomTabPanel value={value} index={3}>
-                        Item Two
-                    </CustomTabPanel>
-                    <CustomTabPanel value={value} index={4}>
-                    </CustomTabPanel> */}
-
-
-
-                    <div style={{ display: 'flex', flexDirection:"row", gap:"50px", marginTop:"24px"}}>
-                {tabs.map((tab, index) => (
-                    <div
-                        key={index}
-                        onClick={() => setActiveTab(index)}
-                        style={{
-                            padding: '5px 0px',
-                            cursor: 'pointer',
-                            borderBottom: activeTab === index ? '2px solid #065E14' : 'none',
-                            color: activeTab === index ? '#065E14' : '#A0A0A0',
-                        }}
-                    >
-                        {tab.label}
+                    <div style={{ display: 'flex', flexDirection: "row", gap: "50px", marginTop: "24px" }}>
+                        {tabs.map((tab, index) => (
+                            <div
+                                key={index}
+                                onClick={() => setActiveTab(index)}
+                                style={{
+                                    padding: '5px 0px',
+                                    cursor: 'pointer',
+                                    borderBottom: activeTab === index ? '2px solid #065E14' : 'none',
+                                    color: activeTab === index ? '#065E14' : '#A0A0A0',
+                                }}
+                            >
+                                {tab.label}
+                            </div>
+                        ))}
                     </div>
-                ))}
-            </div>
-            <div style={{ padding: '20px'}}>
-                {tabs[activeTab].content}
-            </div>
+                    <div style={{ padding: '20px' }}>
+                        {tabs[activeTab].content}
+                    </div>
                 </Grid>
 
             </Grid>
-    
+
         </>
 
 

@@ -40,7 +40,8 @@ const LandCard = () => {
           padding: '1px',
           borderRadius: '8px',
           background: 'linear-gradient(135deg, rgba(75,199,191,1) 0%, rgba(254,197,98,1) 100%)',
-          marginTop: "16px"
+          marginTop: "16px",
+          cursor:"pointer"
         }}
         onClick={() => handleCardClick()}
       >

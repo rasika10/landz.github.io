@@ -30,7 +30,7 @@ const Farmlands = () => {
 <>   
 <FarmlandsSlider/>
 <br/>
-<Grid container spacing={2} sx={{pl:"80px", pr:"80px"}}>
+<Grid container spacing={2} sx={{padding:"0 80px 80px 80px"}}>
     <Grid item xs={8}>
                 <SearchBar handleToggleList={handleToggleList} handleToggleMap={handleToggleMap} />
                {isToggledMap? <MapVew/> : <LandCard  />}

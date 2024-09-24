@@ -37,8 +37,18 @@ const LandProfile = () => {
     >
       Property Listings
     </Link>,
+        <Link
+        underline="hover"
+        key="2"
+        color="inherit"
+        href="/material-ui/getting-started/installation/"
+        onClick={"handleClick"}
+        sx={{fontSize:"12px", fontWeight:"600"}}
+      >
+        Farmlands
+      </Link>,
     <Typography key="3" sx={{ color: '#065E14',fontSize:"12px", fontWeight:"600" }}>
-      Farmlands
+      Land Name
     </Typography>,
   ];
   return (
