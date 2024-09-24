@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/landz.github.io/static/css/main.11076fd5.css",
+    "main.js": "/landz.github.io/static/js/main.74174092.js",
+    "static/js/453.22720e55.chunk.js": "/landz.github.io/static/js/453.22720e55.chunk.js",
+    "static/media/land.png": "/landz.github.io/static/media/land.0d606fd9fcc5d3505917.png",
+    "static/media/map.png": "/landz.github.io/static/media/map.e7aaa2ed4863f44577e0.png",
+    "static/media/feedbackBG.png": "/landz.github.io/static/media/feedbackBG.b371c21e01d49a2a1339.png",
+    "static/media/Feedback.png": "/landz.github.io/static/media/Feedback.bd97454909cb1ebd558d.png",
+    "static/media/banner.jpg": "/landz.github.io/static/media/banner.828a690cf3bf6606d0a8.jpg",
+    "static/media/share.svg": "/landz.github.io/static/media/share.fe8a6be149dae3d13d1bd21caf3bba90.svg",
+    "index.html": "/landz.github.io/index.html",
+    "static/media/wishlist.svg": "/landz.github.io/static/media/wishlist.a07ea11cbfa05d48aebc846281776184.svg",
+    "static/media/treding.svg": "/landz.github.io/static/media/treding.fdac42c642197007eeacffefbc2c517e.svg",
+    "main.11076fd5.css.map": "/landz.github.io/static/css/main.11076fd5.css.map",
+    "main.74174092.js.map": "/landz.github.io/static/js/main.74174092.js.map",
+    "453.22720e55.chunk.js.map": "/landz.github.io/static/js/453.22720e55.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.11076fd5.css",
+    "static/js/main.74174092.js"
+  ]
+}
